@@ -9,7 +9,7 @@
 </div>
 
 <div align="center">
-  <!-- <img src="./preview/gifs/gif.gif" alt="Forum page"/> -->
+  <img src="./preview/gifs/gif.gif" alt="Ecu diagrams page"/>
 </div>
 
 ## Welcome!
@@ -30,6 +30,7 @@
 
 **[✔] 1.2 Install dependencies**
 
+-   Run `composer install` in the root directory to install the required packages.
 -   Run `npm install` in the root directory to install the required packages.
 
 **[✔] 1.3 Migrate and seed database**
@@ -38,5 +39,5 @@
 
 **[✔] 1.4 Launch the project**
 
--   Use `php artisan serve` to start backend.
+-   Use `php artisan serve` to start backend on localhost.
 -   Use `npm run dev` to watch style changes.
