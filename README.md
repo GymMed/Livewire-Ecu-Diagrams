@@ -10,6 +10,7 @@
 
 <div align="center">
   <img src="./preview/gifs/gif.gif" alt="Ecu diagrams page"/>
+    <a href="./tree/main/preview">More Project Views</a>
 </div>
 
 ## Welcome!
