@@ -4,8 +4,8 @@
 <br/>
 <div align="center">
   <!-- <img src="https://img.shields.io/badge/⚙%20Routers%20count-%2048%20Best%20Practices-blue.svg" alt="48 items"/>  -->
-  <img id="last-update-badge" src="https://img.shields.io/badge/%F0%9F%93%85%20Last%20update%20-%20April%2017%2C%202024-green.svg" alt="Last update: May 3, 2024" /> 
-  <img src="https://img.shields.io/badge/ %E2%9C%94%20Updated%20For%20Version%20-%20Node%2020.10.0-brightgreen.svg" alt="Updated for laravel 11.5.0"/>
+  <img id="last-update-badge" src="https://img.shields.io/badge/%F0%9F%93%85%20Last%20update%20-%20May%203%2C%202024-green.svg" alt="Last update: May 3, 2024" /> 
+  <img src="https://img.shields.io/badge/ %E2%9C%94%20Updated%20For%20Version%20-%20Laravel%2011.5.0-brightgreen.svg" alt="Updated for laravel 11.5.0"/>
 </div>
 
 <div align="center">
