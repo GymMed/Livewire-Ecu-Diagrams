@@ -4,7 +4,7 @@
 >
     <div x-data="{ open: false }" class="flex items-center gap-3">
         <div class="w-full flex items-center">
-            <div :class="{'w-full ': open, 'w-64 ': !open}" class="transition-all duration-700 relative flex items-center justify-center">
+            <div :class="{'w-full ': open, 'sm:w-32 md:w-64 ': !open}" class="transition-all duration-700 relative flex items-center justify-center">
                 <input
                     type="text"
                     name="search"

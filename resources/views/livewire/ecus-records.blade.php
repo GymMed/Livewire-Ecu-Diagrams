@@ -3,6 +3,7 @@
     $totalColumns = count($ecuAttributes);
 
     $tdClasses = "p-2";
+    $mobileValuesClasses = "font-semibold";
 @endphp
 
 <div 
@@ -15,7 +16,7 @@
 
     @if($ecus && count($ecus) > 0)
     {{-- If your happiness depends on money, you will never be happy with yourself. --}}
-    <table class="rounded overflow-hidden shadow-lg w-full">
+    <table class="rounded overflow-hidden shadow-lg w-full sm:hidden md:table">
         <thead>
             <tr class="rounded-t font-semibold bg-blue-500 text-white">
                 <td class="{{ $tdClasses }}">
@@ -55,6 +56,35 @@
             @endforeach
         </tbody>
     </table>
+
+    <div class="sm:bock md:hidden">
+        <div class="flex flex-col gap-3">
+            @foreach ($ecus as $record)
+            <div class="flex-col flex gap-1 rounded shadow-inner p-2 bg-gray-100 hover:bg-gradient-to-br hover:from-orange-500 hover:to-orange-700 hover:text-white">
+                <div class="flex gap-2 w-full justify-between">
+                    <div>ID:</div>
+                    <div class="{{ $mobileValuesClasses }}" x-html="highlight('{{ $record->id }}', '{{ $search }}')"></div>
+                </div>
+                <div class="flex gap-2 w-full justify-between">
+                    <div>Dump ID:</div>
+                    <div class="{{ $mobileValuesClasses }}" x-html="highlight('{{ $record->dump_id }}', '{{ $search }}')"></div>
+                </div>
+                <div class="flex gap-2 w-full justify-between">
+                    <div>Ecu:</div>
+                    <div class="{{ $mobileValuesClasses }}" x-html="highlight('{{ $record->ecu }}', '{{ $search }}')"></div>
+                </div>
+                <div class="flex gap-2 w-full justify-between">
+                    <div>Attribute:</div>
+                    <div class="{{ $mobileValuesClasses }}" x-html="highlight('{{ $record->attribute }}', '{{ $search }}')"></div>
+                </div>
+                <div class="flex gap-2 w-full justify-between">
+                    <div>Value:</div>
+                    <div class="{{ $mobileValuesClasses }}" x-html="highlight('{{ $record->value }}', '{{ $search }}')"></div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
 
     {{ $ecus->onEachSide(1)->links() }}
     @else
