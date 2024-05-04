@@ -16,7 +16,7 @@
 
     @if($ecus && count($ecus) > 0)
     {{-- If your happiness depends on money, you will never be happy with yourself. --}}
-    <table class="rounded overflow-hidden shadow-lg w-full sm:hidden md:table">
+    <table class="rounded overflow-hidden shadow-lg w-full max-sm:hidden sm:hidden md:table">
         <thead>
             <tr class="rounded-t font-semibold bg-blue-500 text-white">
                 <td class="{{ $tdClasses }}">

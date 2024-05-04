@@ -4,7 +4,7 @@
     x-on:change-chart-type.window="changeChartTypeEvent"
     x-on:change-chart-data.window="changeChartDataEvent"
 >
-    <canvas id="uniqueEcusChart" class="w-[26rem] h-[26rem]"></canvas>
+    <canvas id="uniqueEcusChart" class="lg:w-[26rem] lg:h-[26rem] md:w-[32rem] md:h-[32rem] sm:w-full sm:h-full max-sm:w-[400px] max-sm:h-[400px]"></canvas>
 </div>
 
 @once

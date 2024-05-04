@@ -1,5 +1,5 @@
 <div>
-    <div class="sm:block hidden">Total records: 
+    <div class="max-sm:block sm:block md:hidden">Total records: 
         <span class="font-semibold">{{ $report['totalRecords'] }}</span>
     </div>
     <div>Total unique ecu models: 
